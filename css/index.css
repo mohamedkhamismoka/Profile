@@ -128,18 +128,18 @@ body {
     background-color: var(--body-blue-white);
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro {
+.nav-fixed {
     transition: all 0.3s;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 999
+    z-index: 999;
+    padding: 0 15px;
+    background-color: var(--body-blue-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
 }
 
 .navbar-icons {
@@ -258,7 +258,7 @@ body {
 
 .landing {
     background-color: var(--body-blue-white);
-    padding-top: 132px;
+    padding-top: 150px;
 }
 
 .greet {
@@ -491,10 +491,10 @@ h2 {
 
 @media only screen and (max-width: 1270px) {
     .intro {
-        padding: 0px 16px;
+        padding: 20px 0px;
     }
     .landing {
-        padding: 132px 16px;
+        padding: 118px 16px;
     }
     .nav-link {
         white-space: nowrap;

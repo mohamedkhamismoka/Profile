@@ -28,9 +28,9 @@ var typed = new Typed(".title", {
 
 window.onscroll = function() {
     if (window.pageYOffset > 100) {
-        document.getElementById("intro").classList.add("scroll-header")
+        document.getElementById("navbar-fixed").classList.add("scroll-header")
         console.log(window.pageYOffset);
     } else {
-        document.getElementById("intro").classList.remove("scroll-header")
+        document.getElementById("navbar-fixed").classList.remove("scroll-header")
     }
 }
