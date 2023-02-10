@@ -408,22 +408,22 @@ h2 {
 }
 
 .mirror div:nth-of-type(3) {
-    left: -90px;
+    left: -85px;
     top: 150px;
 }
 
 .mirror div:nth-of-type(4) {
-    right: -90px;
+    right: -85px;
     top: 180px;
 }
 
 .mirror div:nth-of-type(5) {
-    left: -90px;
+    left: -85px;
     top: 300px;
 }
 
 .mirror div:last-of-type {
-    right: -90px;
+    right: -85px;
     top: 350px;
 }
 
@@ -523,7 +523,7 @@ h2 {
     }
     .follow-header {
         white-space: nowrap;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
