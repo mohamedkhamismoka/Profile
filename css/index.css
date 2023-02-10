@@ -137,9 +137,9 @@ body {
     padding: 0 15px;
     background-color: var(--body-blue-white);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 .navbar-icons {
