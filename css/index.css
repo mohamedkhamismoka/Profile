@@ -124,18 +124,13 @@ body {
 
 /*start navbar*/
 
-.navbar-container {
-    background-color: var(--body-blue-white);
-}
-
 .nav-fixed {
     transition: all 0.3s;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
-    padding: 0 15px;
-    background-color: var(--body-blue-white);
+    padding: 5px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,6 +294,10 @@ h2 {
 
 
 /*start landing*/
+
+.landing {
+    position: relative;
+}
 
 .landing a.contact-me {
     text-decoration: none;
