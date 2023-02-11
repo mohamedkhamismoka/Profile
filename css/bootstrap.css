@@ -8,6 +8,38 @@
  */
 
 :root {
+    --header-height: 3.5rem;
+    --original-color: #8873ef;
+    --original-color-light: #dfd8ff;
+    --accent-color: #ff9937;
+    --heading-color: #12262a;
+    --title-color: #12262a;
+    --body-text-color: #47575a;
+    --body-text-ligth: #898c8d;
+    --her-shape-outline: #e4e1fb;
+    --heading__background-exper: #dfd8ff;
+    --body-color: #fff;
+    --body-blue-white: #f6f8fc;
+    --icon-background-colo: #e9f3fd;
+    --icon-background-color: rgb(255, 255, 255);
+    --service-background-color: #f6f8fc;
+    --skill-card-background: rgb(255, 255, 255);
+    --contact--background-color: rgb(255, 255, 255);
+    --form-input-color: #f1f2ff;
+    --copyrigth-background: #1b1e29;
+    --body-font: "Poppins", sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 4.5rem;
+    --h2-font-size: 3.5rem;
+    --h3-font-size: 3rem;
+    --normal-font-size: 2.1rem;
+    --small-font-size: 1.5rem;
+    --smaller-font-size: 1.4rem;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 800;
+    --z-tooltip: 10;
+    --z-fixed: 100;
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -4136,7 +4168,7 @@ fieldset:disabled .btn {
 
 .navbar-nav .show>.nav-link,
 .navbar-nav .nav-link.active {
-    color: var(--bs-navbar-active-color);
+    color: var(--original-color);
 }
 
 .navbar-nav .dropdown-menu {

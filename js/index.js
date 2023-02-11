@@ -1,3 +1,22 @@
+$(document).ready(function() {
+    $(window).scroll(function() {
+
+
+        var data = $("#navbar-fixed").find(".nav-link");
+        for (let index = 0; index < data.length; index++) {
+            if (data[index].classList.contains("active")) {
+                $(".intro").find(".nav-link:eq(" + index + ")").addClass("active")
+            }
+
+            ;
+
+        }
+    })
+
+})
+
+
+
 var btn = document.querySelector(".moon");
 btn.onclick = function() {
     document.body.classList.add("dark");
@@ -29,7 +48,7 @@ var typed = new Typed(".title", {
 window.onscroll = function() {
     if (window.pageYOffset > 100) {
         document.getElementById("navbar-fixed").classList.add("scroll-header")
-        console.log(window.pageYOffset);
+
     } else {
         document.getElementById("navbar-fixed").classList.remove("scroll-header")
     }

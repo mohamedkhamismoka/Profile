@@ -7,12 +7,13 @@
     <title>Mohamed Atif Fahmy</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/bootstrap.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".trust" data-bs-offset="0">
 
 
 
@@ -26,11 +27,11 @@
             <ul class="navbar-nav d-flex ">
                 <li class="nav-item ">
 
-                    <a class="nav-link nav-active custom" class="" href="# "><i class="fa-solid fa-house"></i></a>
+                    <a class="nav-link  custom" class="" href="#landing"><i class="fa-solid fa-house"></i></a>
 
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link  custom" href="# "><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="nav-link  custom" href="#services "><i class="fa-solid fa-bag-shopping"></i></a>
 
                 </li>
                 <li class="nav-item ">
@@ -70,13 +71,13 @@
         </a>
 
         <div class="nav-menu">
-            <ul class="navbar-nav d-flex justify-content-between align-items-center">
+            <ul class="navbar-nav d-flex justify-content-between align-items-center" style="margin-left: 7px;">
                 <li class="nav-item ">
 
-                    <a class="nav-link nav-active" href="# ">Home</a>
+                    <a class="nav-link" href="#landing ">Home</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="# ">services</a>
+                    <a class="nav-link " href="#services ">services</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link " href="# ">Experiences</a>
@@ -108,7 +109,7 @@
     <!--end navbar-->
 
     <!--start landing-->
-    <section class="landing">
+    <section class="landing" id="landing">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 text-center  text-lg-start  mb-4">
@@ -196,6 +197,46 @@
     </section>
     <!--end landing-->
 
+
+    <!--start services-->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="header">
+                <h2>services I offer you</h2>
+                <span></span>
+            </div>
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-xs-12 col-lg-4 service">
+                        <div class="container">
+                            <div class="logo"> <img src="images/web-development.svg" alt="" srcset=""></div>
+                            <h2>Web Development</h2>
+                            <p>Develop a professional attractive and easy-to-maintain website, and I can help you stand out from the crowd and be able to establish a strong brand identity.</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12 col-lg-4 service">
+                        <div class="container">
+                            <div class="logo"> <img src="images/ui-ux.svg" alt="" srcset=""></div>
+                            <h2>Web Design</h2>
+                            <p>Design all the screens through which a user will move, and to create the visual elements, and their interactive properties that facilitate this movement.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-4 service">
+                        <div class="container">
+                            <div class="logo"> <img src="images/cloud.svg" alt="" srcset=""></div>
+                            <h2>Full stack</h2>
+                            <p>Take all cycle of project and handle Api http requests participate in both front and back end development in project </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!--end services-->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
