@@ -1,7 +1,17 @@
 $(document).ready(function() {
+    var data = $("#navbar-fixed").find(".nav-link");
+    for (let index = 0; index < data.length; index++) {
+        if (data[index].classList.contains("active")) {
+            $(".intro").find(".nav-link:eq(" + index + ")").addClass("nav-active")
+        }
+
+        ;
+
+    }
+
     $(window).scroll(function() {
 
-
+        $(".intro").find(".nav-link:eq(" + 0 + ")").removeClass("nav-active")
         var data = $("#navbar-fixed").find(".nav-link");
         for (let index = 0; index < data.length; index++) {
             if (data[index].classList.contains("active")) {
