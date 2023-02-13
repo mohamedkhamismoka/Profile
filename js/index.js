@@ -38,7 +38,7 @@ var addActiveClass = function(id) {
     document.querySelectorAll(selector)[1].classList.add("active");
 };
 
-var navLinks = document.querySelectorAll(".navbar a:not('.custom')");
+var navLinks = document.querySelectorAll(".navbar a");
 
 navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
