@@ -13,9 +13,9 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body>
 
-    <nav class="navbar navbar-expand">
+    <nav class="navbar navbar-expand" id="navabar">
 
         <a class="navbar-brand " href="# ">
             <div class="logo ">
@@ -317,6 +317,10 @@
     <script>
         $(function() {
             new WOW().init();
+            $("body").scrollspy({
+                target: '#navabar',
+                offset: 10
+            });
         });
     </script>
 
