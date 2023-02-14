@@ -42,7 +42,7 @@ var navLinks = document.querySelectorAll(".navbar a");
 
 navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-        e.preventDefault();
+
         var currentId = e.target.attributes.href.value;
         var section = document.querySelector(currentId);
         var sectionPos = section.offsetTop;

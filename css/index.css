@@ -456,19 +456,22 @@ h2 {
 /*start services*/
 
 .services,
-.education {
+.education,
+.skills {
     background-color: var(--body-color);
     padding: 1.6rem 0.4rem;
 }
 
 .services .header,
-.education .header {
+.education .header,
+.skills .header {
     position: relative;
     padding: 80px 0;
 }
 
 .services .header h2,
-.education .header h2 {
+.education .header h2,
+.skills .header h2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -481,7 +484,8 @@ h2 {
 }
 
 .services .header span,
-.education .header span {
+.education .header span,
+.skills .header span {
     background-color: var(--original-color-light);
     position: absolute;
     z-index: -1;
@@ -595,6 +599,51 @@ h2 {
 /*end services*/
 
 
+/*start skills*/
+
+.skills p {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+.skills .header h2 {
+    font-size: 2.2rem;
+}
+
+.skills h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--body-text-color);
+}
+
+.technologies .techno {
+    background-color: var(--skill-card-background);
+    box-shadow: 4px 8px 0 rgb(0 0 0 / 2%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1.7rem;
+}
+
+.technologies .techno img {
+    width: 140px;
+    height: 140px;
+}
+
+.skills .skill-name {
+    text-transform: uppercase;
+    color: var(--body-text-ligth);
+    font-size: 20px;
+    margin-top: -13px;
+    margin-bottom: 3px;
+}
+
+
+/*end skills*/
+
+
 /*start media query*/
 
 @media screen and (max-width: 992px) {
@@ -646,7 +695,9 @@ h2 {
         padding: 10px 32px;
     }
     .services .header h2,
-    .education .header h2 {
+    .education .header h2,
+    .skills .header h2,
+    .skills h3 {
         font-size: 2rem;
         top: 15px
     }
@@ -666,11 +717,14 @@ h2 {
 
 @media screen and (max-width:767px) {
     .services .header span,
-    .education .header span {
+    .education .header span,
+    .skills .header span {
         width: 315px;
     }
     .services .header h2,
-    .education .header h2 {
+    .education .header h2,
+    .skills .header h2,
+    .skills h3 {
         font-size: 26px;
         top: 20px
     }
@@ -688,7 +742,7 @@ h2 {
         font-size: 18px;
     }
     .education-card p.info {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.5;
     }
     .navbar-expand {
@@ -721,26 +775,43 @@ h2 {
         font-size: 1.5rem;
     }
     .services .header span,
-    .education .header span {
+    .education .header span,
+    .skills .header span {
         width: 250px;
     }
     .services .header h2,
-    .education .header h2 {
+    .education .header h2,
+    .skills .header h2 {
         font-size: 23px;
         white-space: nowrap;
         top: 22px;
     }
-    .education .header span {
+    .skills h3 {
+        font-size: 23px;
+        white-space: nowrap;
+    }
+    .education .header span .skills .header span {
         background-color: var(--original-color-light);
+    }
+    .education-card p.info {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .technologies .techno img {
+        width: 115px;
+        height: 115px;
+    }
+    .skills .skill-name {
+        font-size: 15px;
     }
 }
 
 @media screen and (min-width:1030px) {
     .education .education-card {
-        margin-left: -10px;
+        margin-left: 5%;
     }
     .education .education-card.second-card {
-        margin-left: 300px;
+        margin-left: 25%;
     }
 }
 
