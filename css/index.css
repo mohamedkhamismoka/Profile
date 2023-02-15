@@ -974,4 +974,9 @@
     .navbar .container {
         padding: 10px 40px;
     }
+    
+    .services .container.first {
+        padding: 10px 40px;
+        padding-bottom: 30px;
+    }
     /*end media query*/

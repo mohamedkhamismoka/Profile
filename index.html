@@ -176,7 +176,7 @@
 
     <!--start services-->
     <section class="services " id="services">
-        <div class="container ">
+        <div class="container first ">
             <div class="header ">
                 <h2>services I offer you</h2>
                 <span></span>
@@ -411,7 +411,7 @@
     <section class="contact container" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6  wow fadeInDown" ">
+                <div class="col-12 col-lg-6  wow fadeInDown">
                     <div class="header d-flex align-items-center ">
                         <span></span>
                         <p>sayHello</p>
@@ -438,18 +438,18 @@
                 </div>
 
                 <div class="col-12 col-lg-6 mt-5 mt-lg-0 wow fadeInDown ">
-                    <form  id="contact-form ">
+                    <form id="contact-form ">
                         <header class="contact-form__header ">
                             <div class="logo__letter "><span>A</span></div>
                         </header>
 
                         <div class="name ">
-                            <input type="text " class="form-control " placeholder="Name " name="name " required=" " id="name " >
+                            <input type="text " class="form-control " placeholder="Name " name="name " required=" " id="name ">
                             <i class="fa-solid fa-user "></i>
                         </div>
 
                         <div class="email ">
-                            <input type="email " placeholder="Email " class="form-control " name="email " required=" " id="email " >
+                            <input type="email " placeholder="Email " class="form-control " name="email " required=" " id="email ">
                             <i class="fa-solid fa-envelope "></i>
                         </div>
                         <div class="message ">
@@ -459,7 +459,7 @@
 
 
                         <div class="d-flex justify-content-center ">
-                            <button  class="btn ">
+                            <button class="btn ">
                           Let's talk <i class="fa-solid fa-paper-plane "></i>
                         </button>
                         </div>
@@ -486,7 +486,6 @@
 
     <script src="js/index.js "></script>
     <script>
-    
     </script>
     <script>
         $(function() {
@@ -496,9 +495,12 @@
                 offset: 10
             });
 
+            $('form').submit(function(evt) {
+                evt.preventDefault();
+                window.history.back();
+            });
 
 
- 
         });
     </script>
 
