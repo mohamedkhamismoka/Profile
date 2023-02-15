@@ -35,7 +35,9 @@ var addActiveClass = function(id) {
     // console.log(id);
     var selector = `.navbar a[href="#${id}"]`;
     document.querySelectorAll(selector)[0].classList.add("active");
-    document.querySelectorAll(selector)[1].classList.add("active");
+    if (document.querySelectorAll(selector)[1] != null) {
+        document.querySelectorAll(selector)[1].classList.add("active")
+    }
 };
 
 var navLinks = document.querySelectorAll(".navbar a");

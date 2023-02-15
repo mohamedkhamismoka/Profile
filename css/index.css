@@ -708,9 +708,10 @@
     .email svg,
     .message svg {
         position: absolute;
-        right: 30px;
+        right: 40px;
         top: 50%;
         transform: translateY(-50%);
+        color: var(--original-color);
     }
     
     .message svg {
@@ -724,11 +725,6 @@
         font-weight: 500;
         font-family: var(--body-font);
         color: var(--heading-color);
-    }
-    
-    .form-control,
-    .form-select,
-    .form-check-input {
         background-color: var(--form-input-color);
         border-radius: 1.2rem;
         padding: 1rem;
@@ -751,16 +747,7 @@
         height: 150px;
     }
     
-    .form-control,
-    .form-select,
-    .form-check-input {
-        font-size: 1rem;
-        font-weight: 500;
-        font-family: var(--body-font);
-        color: var(--heading-color);
-    }
-    
-    .btn__form {
+    form .btn {
         background-color: var(--original-color);
         color: #fff;
         border-radius: 1rem;
@@ -776,7 +763,7 @@
         transition: 0.3s;
     }
     
-    .btn__form svg {
+    form .btn svg {
         margin-left: 5px;
     }
     /*end contact*/
