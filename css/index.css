@@ -69,7 +69,7 @@
     
     .container {
         max-width: 530px;
-        padding: 30px 40px;
+        padding: 30px 20px;
     }
     
     .container-fluid {
@@ -79,6 +79,11 @@
     
      ::-webkit-scrollbar {
         width: 15px;
+    }
+    
+    .not-valid {
+        border: 1px solid red;
+        border-radius: 1.2rem;
     }
     
     .validate-message {
@@ -228,9 +233,12 @@
     }
     
     .change-theme {
-        color: var(--original-color);
         margin-left: 40px;
         font-size: 2rem;
+    }
+    
+    .change-theme a {
+        color: var(--original-color);
     }
     
     .change-theme .light {
@@ -271,7 +279,7 @@
     
     .landing {
         background-color: var(--body-blue-white);
-        padding-top: 130px;
+        padding-top: 120px;
     }
     
     .landing .title {
@@ -776,6 +784,29 @@
         margin-left: 5px;
     }
     /*end contact*/
+    /*start jump*/
+    
+    .jump {
+        position: fixed;
+        right: 10px;
+        bottom: 190px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0 8px 12px hsl(288deg 66% 45% / 10%);
+        display: inline-flex;
+        padding: 1rem;
+        border-radius: 0.57rem;
+        color: #12262a;
+        font-size: 1rem;
+        transition: 0.3s;
+        opacity: 0;
+    }
+    /*end jump*/
     /*start media query*/
     
     @media screen and (max-width: 992px) {
@@ -974,6 +1005,8 @@
             margin-bottom: 10px;
         }
     }
+    /*end media query*/
+    /*for precedence*/
     
     .landing .container {
         padding: 0 40px;
@@ -981,16 +1014,10 @@
     }
     
     .navbar .container {
-        padding: 10px 40px;
+        padding: 10px 20px;
     }
     
     .services .container.first {
-        padding: 10px 40px;
+        padding: 10px 20px;
         padding-bottom: 30px;
     }
-    
-    .not-valid {
-        border: 1px solid red;
-        border-radius: 1.2rem;
-    }
-    /*end media query*/

@@ -2,6 +2,14 @@ var sections = document.querySelectorAll("section");
 
 onscroll = function() {
 
+    if (window.pageYOffset > 300) {
+        $(".jump").css("opacity", "1");
+
+
+    } else {
+        $(".jump").css("opacity", "0");
+    }
+
 
 
     if (window.pageYOffset > 100) {
@@ -96,6 +104,11 @@ $(function() {
         offset: 10
     });
 
+
+    $(".jump").click(function() {
+        window.scrollTo(0, 0)
+    })
+
     function sendEmail(name, email, body) {
 
         Email.send({
@@ -109,7 +122,7 @@ $(function() {
 
 
         }).then(
-            message => message == "OK" ? alert("mail sent successfully") : alert("some thing wrong")
+            message => message == "OK" ? alert("mail sent successfully") : alert(message)
         );
     }
 
