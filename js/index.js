@@ -88,3 +88,126 @@ var typed = new Typed(".title", {
     loop: true
 
 })
+
+$(function() {
+    new WOW().init();
+    $("body ").scrollspy({
+        target: '#navabar',
+        offset: 10
+    });
+
+    function sendEmail(name, email, body) {
+
+        Email.send({
+
+            SecureToken: "cfcf8187-0032-4b01-9e8c-bf6aebc2ee0a",
+
+            To: "atiffahmykhamis@gmail.com",
+            From: "atiffahmykhamis@gmail.com",
+            Subject: "message from " + name,
+            Body: "message from " + email + " from your profile App <br/>" + body
+
+
+        }).then(
+            message => message == "OK" ? alert("mail sent successfully") : alert("some thing wrong")
+        );
+    }
+
+    $('form').submit(function(evt) {
+        evt.preventDefault();
+        window.history.back();
+        var valid = false;
+        if ($("#name").val() == "") {
+            $("#name").addClass("not-valid");
+            $(".name-message").css("display", "block")
+            $(".name-message").text("name is required")
+        } else if ($("#name").val().length < 5) {
+            $("#name").addClass("not-valid");
+            $(".name-message").css("display", "block")
+            $(".name-message").text("min length is 5")
+        } else {
+            valid = true;
+        }
+
+        if ($("#email").val() == "") {
+            $("#email").addClass("not-valid");
+            $(".email-message").css("display", "block")
+            $(".email-message").text("email is required")
+        } else if ($("#email").val().toString().indexOf("@") == -1) {
+            $("#email").addClass("not-valid");
+            $(".email-message").css("display", "block")
+            $(".email-message").text("Please Enter valid mail")
+        } else {
+            valid = true;
+        }
+
+        if ($("#message").val() == "") {
+            $("#message").addClass("not-valid");
+            $(".message-message").css("display", "block")
+            $(".message-message").text("message is required")
+        } else if ($("#message").val().length < 10) {
+            $("#message").addClass("not-valid");
+            $(".message-message").css("display", "block")
+            $(".message-message").text("message min length is 10")
+        } else {
+            valid = true;
+        }
+
+
+        if (valid) {
+            sendEmail($("#name").val(), $("#email").val(), $("#message").val())
+        }
+
+    });
+    $("#name").change(function() {
+        if ($("#name").val() == "") {
+            $("#name").addClass("not-valid");
+            $(".name-message").css("display", "block")
+            $(".name-message").text("name is required")
+        } else if ($("#name").val().length < 5) {
+            $("#name").addClass("not-valid");
+            $(".name-message").css("display", "block")
+            $(".name-message").text("min length is 5")
+        } else {
+            $("#name").removeClass("not-valid");
+            $(".name-message").css("display", "none")
+            $(".name-message").text("name is required")
+        }
+
+
+
+    })
+
+
+    $("#message").change(function() {
+        if ($("#message").val() == "") {
+            $("#message").addClass("not-valid");
+            $(".message-message").css("display", "block")
+            $(".message-message").text("message is required")
+        } else if ($("#message").val().length < 10) {
+            $("#message").addClass("not-valid");
+            $(".message-message").css("display", "block")
+            $(".message-message").text("message min length is 10")
+        } else {
+            $("#message").removeClass("not-valid");
+            $(".message-message").css("display", "none")
+        }
+    })
+
+    $("#email").change(function() {
+        if ($("#email").val() == "") {
+            $("#email").addClass("not-valid");
+            $(".email-message").css("display", "block")
+            $(".email-message").text("email is required")
+        } else if ($("#email").val().toString().indexOf("@") == -1) {
+            $("#email").addClass("not-valid");
+            $(".email-message").css("display", "block")
+            $(".email-message").text("Please Enter valid mail")
+        } else {
+            $("#email").removeClass("not-valid");
+            $(".email-message").css("display", "none")
+            $(".email-message").text("name is required")
+        }
+    })
+
+});

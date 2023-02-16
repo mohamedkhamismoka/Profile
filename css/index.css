@@ -81,6 +81,15 @@
         width: 15px;
     }
     
+    .validate-message {
+        display: none;
+        position: absolute;
+        font-size: 18px;
+        top: 100%;
+        left: 10px;
+        padding-bottom: 5px;
+    }
+    
      ::-webkit-scrollbar-track {
         background-color: #f6f6f6;
         box-shadow: 0 0 10px #ddd inset;
@@ -978,5 +987,10 @@
     .services .container.first {
         padding: 10px 40px;
         padding-bottom: 30px;
+    }
+    
+    .not-valid {
+        border: 1px solid red;
+        border-radius: 1.2rem;
     }
     /*end media query*/

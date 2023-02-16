@@ -443,18 +443,23 @@
                             <div class="logo__letter "><span>A</span></div>
                         </header>
 
-                        <div class="name ">
-                            <input type="text " class="form-control " placeholder="Name " name="name " required=" " id="name ">
+                        <div class="name">
+                            <input type="text " class="form-control " placeholder="Name " name="name " id="name">
+
+
                             <i class="fa-solid fa-user "></i>
+                            <p class="text-danger validate-message name-message"></p>
                         </div>
 
-                        <div class="email ">
-                            <input type="email " placeholder="Email " class="form-control " name="email " required=" " id="email ">
+                        <div class=" email ">
+                            <input type="email " placeholder="Email " class="form-control " name="email " id="email">
                             <i class="fa-solid fa-envelope "></i>
+                            <p class="text-danger validate-message email-message"></p>
                         </div>
                         <div class="message ">
-                            <textarea name="message " rows="20 " cols="50 " type=" " class="form-check-input " id="message " placeholder="Message " required=" "></textarea>
+                            <textarea name="message " rows="20 " cols="50 " type=" " class="form-check-input " id="message" placeholder="Message "></textarea>
                             <i class="fa-solid fa-message "></i>
+                            <p class="text-danger validate-message message-message"></p>
                         </div>
 
 
@@ -485,24 +490,7 @@
     </script>
 
     <script src="js/index.js "></script>
-    <script>
-    </script>
-    <script>
-        $(function() {
-            new WOW().init();
-            $("body ").scrollspy({
-                target: '#navabar',
-                offset: 10
-            });
 
-            $('form').submit(function(evt) {
-                evt.preventDefault();
-                window.history.back();
-            });
-
-
-        });
-    </script>
 
 </body>
 
