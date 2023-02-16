@@ -161,7 +161,7 @@ $(function() {
         } else if ($("#message").val().length < 10) {
             $("#message").addClass("not-valid");
             $(".message-message").css("display", "block")
-            $(".message-message").text("message min length is 10")
+            $(".message-message").text("min length is 10")
         } else {
             valid = true;
         }
@@ -200,7 +200,7 @@ $(function() {
         } else if ($("#message").val().length < 10) {
             $("#message").addClass("not-valid");
             $(".message-message").css("display", "block")
-            $(".message-message").text("message min length is 10")
+            $(".message-message").text("min length is 10")
         } else {
             $("#message").removeClass("not-valid");
             $(".message-message").css("display", "none")
