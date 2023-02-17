@@ -1,5 +1,5 @@
 # my Profile Website
-![Design Preview](images/head.png)
+![Design Preview](images/head.PNG)
 
 ## Welcome! 👋
 
