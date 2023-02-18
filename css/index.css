@@ -301,7 +301,7 @@
         width: 120px;
         background-color: var(--original-color);
         height: 5px;
-        margin-left: 1rem;
+        margin-left: 0.3rem;
     }
     
     h2 {
